@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Market-Deco";
+  src: url("./assets/fonts/Market-Deco.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
