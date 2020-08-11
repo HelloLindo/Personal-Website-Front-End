@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import 'normalize.css/normalize.css'
+import '@/assets/theme/index.css'
+import ElementUI from 'element-ui'
+import ajax from '@/utils/ajax'
 
 Vue.config.productionTip = true
 Vue.config.devtools = ENV === 'dev'
@@ -19,6 +23,11 @@ Vue.config.errorHandler = function (err, vm, info) {
   // 只在 2.2.0+ 可用
   console.warn(err, vm, info)
 }
+
+Vue.use(ElementUI)
+
+// Global methods
+Vue.prototype.$ajax = ajax
 
 new Vue({
   router,

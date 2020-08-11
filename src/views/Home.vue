@@ -1,4 +1,3 @@
-
 <template>
   <div class="home">
     <img src="../assets/img/logo.png" />

@@ -5,6 +5,8 @@
   "scripts": {},
   "dependencies": {
     "axios": "^0.18.0",
+    "element-ui": "^2.13.2",
+    "normalize.css": "^8.0.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vue-template-compiler": "^2.5.17",
@@ -19,5 +21,9 @@
       "name": "fbi-project-vue",
       "version": "v4.1.2"
     }
+  },
+  "devDependencies": {
+    "postcss": "^7.0.32",
+    "postcss-loader": "^3.0.0"
   }
 }
