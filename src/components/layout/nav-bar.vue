@@ -7,11 +7,11 @@
         class="nav-menu"
         mode="horizontal"
       >
-        <el-menu-item index="0">Home</el-menu-item>
-        <el-menu-item index="1">News</el-menu-item>
-        <el-menu-item index="2">Monment</el-menu-item>
-        <el-menu-item index="3">More About Me</el-menu-item>
-        <el-menu-item index="4">Resume</el-menu-item>
+        <el-menu-item
+          :index="index.toString()"
+          :key="index"
+          v-for="(value, index) in menuContent"
+        >{{value}}</el-menu-item>
       </el-menu>
     </div>
   </div>
@@ -23,7 +23,8 @@
 
     data() {
       return {
-        activeIndex: '0'
+        activeIndex: '0',
+        menuContent: ['Home', 'News', 'Monment', 'More About Me', 'Resume']
       }
     },
 
@@ -45,6 +46,7 @@
     .el-menu-item {
       letter-spacing: 1px;
       border-bottom: none;
+      border-radius: 10px;
     }
     border-bottom: none;
   }
