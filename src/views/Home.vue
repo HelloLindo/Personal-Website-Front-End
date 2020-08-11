@@ -8,15 +8,13 @@
 
 <script>
   import HelloWorld from '@/components/HelloWorld.vue'
-  import Demo from '@/components/demo'
 
   export default {
     name: 'home',
 
     // Assets
     components: {
-      HelloWorld,
-      Demo
+      HelloWorld
     },
 
     // Composition

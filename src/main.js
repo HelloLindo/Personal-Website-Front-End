@@ -10,7 +10,7 @@ import ElementUI from 'element-ui'
 import ajax from '@/utils/ajax'
 
 Vue.config.productionTip = true
-Vue.config.devtools = ENV === 'dev'
+// Vue.config.devtools = ENV === 'dev'
 
 Vue.config.warnHandler = function (msg, vm, trace) {
   // `trace` 是组件的继承关系追踪

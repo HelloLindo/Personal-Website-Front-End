@@ -1,34 +1,51 @@
 <template>
   <div class="app">
-    <div class="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
+    <div class="main-content">
+      <nav-top></nav-top>
+      <router-view></router-view>
     </div>
-    <router-view></router-view>
   </div>
 </template>
 
-<style>
-@import "./assets/fonts/font.css";
+<script>
+  import NavTop from '@/components/layout/nav-top'
 
-.app {
-  font-family: "SFMono-Regular", "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-
-  .nav {
-    padding: 30px;
-
-    a {
-      font-weight: bold;
-      color: #2c3e50;
-
-      &.router-link-exact-active {
-        color: #42b983;
-      }
+  export default {
+    components: {
+      NavTop
     }
   }
-}
+</script>
+
+<style>
+  @import './assets/fonts/font.css';
+
+  .app {
+    font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #474747;
+  }
+
+  html,
+  body,
+  .app {
+    height: 100%;
+    background-color: #fafafa;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .main-content {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-width: 1441px) {
+    .main-content {
+      width: 1000px;
+      margin: 0 auto;
+    }
+  }
 </style>
