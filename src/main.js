@@ -8,6 +8,8 @@ import 'normalize.css/normalize.css'
 import '@/assets/theme/index.css'
 import ElementUI from 'element-ui'
 import ajax from '@/utils/ajax'
+import '@/assets/svg/iconfont.js'
+import '@/assets/svg/iconfont.css'
 
 Vue.config.productionTip = true
 // Vue.config.devtools = ENV === 'dev'
