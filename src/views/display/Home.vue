@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/img/logo.png" />
+    <img src="../../assets/img/logo.png" />
     <h3>{{ num }}</h3>
     <HelloWorld msg="The website of Yuling Wu is under developing."></HelloWorld>
   </div>

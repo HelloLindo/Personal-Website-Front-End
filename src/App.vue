@@ -24,7 +24,7 @@
   @import './assets/fonts/font.css';
 
   .app {
-    font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;

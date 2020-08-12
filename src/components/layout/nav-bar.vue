@@ -24,13 +24,23 @@
     data() {
       return {
         activeIndex: '0',
-        menuContent: ['Home', 'News', 'Monment', 'More About Me', 'Resume']
+        menuContent: ['Home', 'News', 'Monment', 'More About Me', 'Resume'],
+        routerName: ['Home', 'News', 'Monment', 'More']
       }
+    },
+
+    mounted() {
+      this.activeIndex = this.routerName.indexOf(this.$route.name).toString()
     },
 
     methods: {
       handleSelect(key, keyPath) {
-        console.log(key, keyPath)
+        if (key != '4' && key != this.activeIndex) {
+          this.activeIndex = key
+          this.$router.replace({ name: this.routerName[key] })
+        } else if (key === '4') {
+          window.location.href = 'https://www.wuyuling.net/Yuling_Wu_Resume.pdf'
+        }
       }
     }
   }
@@ -44,6 +54,7 @@
   }
   >>> .el-menu.el-menu--horizontal {
     .el-menu-item {
+      font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
       letter-spacing: 1px;
       border-bottom: none;
       border-radius: 10px;

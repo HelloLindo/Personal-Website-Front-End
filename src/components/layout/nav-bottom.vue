@@ -42,9 +42,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .nav-bottom {
-    margin: 50px auto;
+    margin: 100px auto 50px auto;
     height: 70px;
     width: 100%;
+    font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
   }
   .icon-list {
     svg {

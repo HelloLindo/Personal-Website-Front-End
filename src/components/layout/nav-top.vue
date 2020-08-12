@@ -50,6 +50,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .nav-top {
+    margin-bottom: 30px;
+  }
   .title-wrapper > .title-name {
     h1 {
       font-family: 'Market-Deco', 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;

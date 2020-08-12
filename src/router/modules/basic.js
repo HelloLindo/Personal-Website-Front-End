@@ -1,21 +1,39 @@
-import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
+import Home from '@/views/display/Home.vue'
+import News from '@/views/display/News.vue'
+import Monment from '@/views/display/Monment.vue'
+import More from '@/views/display/More.vue'
 
 export default [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home,
     meta: {
       title: 'Home'
     }
   },
   {
-    path: '/about',
-    name: 'about',
-    component: About,
+    path: '/news',
+    name: 'News',
+    component: News,
     meta: {
-      title: 'About'
+      title: 'News'
+    }
+  },
+  {
+    path: '/monment',
+    name: 'Monment',
+    component: Monment,
+    meta: {
+      title: 'Monment'
+    }
+  },
+  {
+    path: '/more',
+    name: 'More',
+    component: More,
+    meta: {
+      title: 'More'
     }
   },
   {
