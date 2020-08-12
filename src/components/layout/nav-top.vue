@@ -2,9 +2,9 @@
   <header class="nav-top">
     <div class="title-wrapper">
       <div class="title-name">
-        <h1>{{ websiteName }}</h1>
+        <h1 @click="clickTitle">{{ websiteName }}</h1>
       </div>
-      <div class="title-icon">
+      <div @click="clickSearch" class="title-icon">
         <i class="el-icon-search"></i>
       </div>
     </div>
@@ -44,6 +44,18 @@
       //       throw err
       //     }
       //   })
+    },
+    methods: {
+      clickSearch() {
+        this.$message({ showClose: true, message: 'Sorry. The Search function is under developing.' })
+      },
+      clickTitle() {
+        if (this.$route.name != 'Home') {
+          this.$router.replace({ name: 'Home' })
+        } else {
+          this.$router.go(0)
+        }
+      }
     }
   }
 </script>

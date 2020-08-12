@@ -3,17 +3,26 @@
     <div class="icon-list">
       <svg
         :key="index"
-        @click="svgClick(index)"
+        @click="svgClick(key, value)"
         aria-hidden="true"
         class="icon"
-        v-for="(value, index) in icons"
+        v-for="(value, key, index) in icons"
       >
-        <use :xlink:href="'#icon-' + value" />
+        <use :xlink:href="'#icon-' + key" />
       </svg>
     </div>
     <div class="copyright">
       <p>Copyright {{year}}</p>
     </div>
+
+    <el-dialog :visible.sync="wechatDialogVisible" title="My Wechat ID" width="25%">
+      <span>
+        <p>{{icons.wechat}}</p>
+      </span>
+      <span class="dialog-footer" slot="footer">
+        <el-button @click="wechatDialogVisible = false" type="info">Confirm</el-button>
+      </span>
+    </el-dialog>
   </footer>
 </template>
 
@@ -23,7 +32,15 @@
 
     data() {
       return {
-        icons: ['twitter', 'linkedin', 'instagram', 'wechat', 'email'],
+        wechatDialogVisible: false,
+        icons: {
+          twitter: 'https://twitter.com/Hello_Lindo',
+          linkedin: 'https://www.linkedin.com/in/lindowu',
+          youtube: 'https://www.youtube.com/channel/UCzqPcdtI88P838eq6OzbP4g',
+          instagram: 'https://www.instagram.com/lindo_wu',
+          wechat: 'lindowu',
+          email: 'lindowu@foxmail.com'
+        },
         year: 2020
       }
     },
@@ -32,8 +49,14 @@
       this.year = date.getFullYear()
     },
     methods: {
-      svgClick(index) {
-        console.log(index)
+      svgClick(key, value) {
+        if (key != 'wechat' && key != 'email') {
+          window.location.href = value
+        } else if (key === 'wechat') {
+          this.wechatDialogVisible = true
+        } else if (key === 'email') {
+          window.location.href = 'mailto: ' + value
+        }
       }
     }
   }

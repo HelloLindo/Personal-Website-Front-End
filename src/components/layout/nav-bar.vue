@@ -33,6 +33,12 @@
       this.activeIndex = this.routerName.indexOf(this.$route.name).toString()
     },
 
+    watch: {
+      $route(to, from) {
+        this.activeIndex = this.routerName.indexOf(to.name).toString()
+      }
+    },
+
     methods: {
       handleSelect(key, keyPath) {
         if (key != '4' && key != this.activeIndex) {
