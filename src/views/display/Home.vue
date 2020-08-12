@@ -25,7 +25,7 @@
     // Data
     data() {
       return {
-        profileUrl: '../../assets/img/profile.jpg',
+        profileUrl: require('../../assets/img/profile.jpg'),
         introText: [
           "Hi, I'm Yuling. Welcome to my website.",
           "I'm a software engineer based in China specializing in building (and occasionally designing) exceptional services, websites, applications, and everything in between.",
