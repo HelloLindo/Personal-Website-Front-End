@@ -3,16 +3,19 @@
     <div class="main-content">
       <nav-top></nav-top>
       <router-view></router-view>
+      <nav-bottom></nav-bottom>
     </div>
   </div>
 </template>
 
 <script>
   import NavTop from '@/components/layout/nav-top'
+  import NavBottom from '@/components/layout/nav-bottom'
 
   export default {
     components: {
-      NavTop
+      NavTop,
+      NavBottom
     }
   }
 </script>
