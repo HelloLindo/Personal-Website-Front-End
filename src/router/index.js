@@ -9,8 +9,9 @@ Vue.use(Router)
 export const routes = [...basicRoutes]
 
 const routerInstance = new Router({
-  routes: routes,
-  mode: 'history'
+  routes: routes
+  // Must Disabled history mode on andrew server (Not support Single Page application by server setting)
+  // mode: 'history'
 })
 
 const beforeEachKeys = Object.keys(hooks.beforeEach)
