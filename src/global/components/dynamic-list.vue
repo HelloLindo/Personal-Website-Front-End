@@ -19,7 +19,7 @@
   <section :class="theme" class="dynamic-list">
     <div class="el-alert el-alert--error is-dark list-error" v-if="disabled">
       <span class="txt">{{ message }}</span>
-      <el-link @click="goToFirstPage" type="primary">返回第一页</el-link>
+      <el-link @click="goToFirstPage" type="primary">Back to the first page</el-link>
     </div>
     <template v-else>
       <header class="block-title header" v-if="title || $slots.header">
@@ -93,13 +93,13 @@
         <el-row
           :element-loading-background="$attrs['loading-background'] || 'rgba(0, 0, 0, 0.3)'"
           :element-loading-spinner="$attrs['loading-spinner'] || 'el-icon-loading'"
-          :element-loading-text="$attrs['loading-spinner'] || '加载中···'"
+          :element-loading-text="$attrs['loading-spinner'] || 'Loading···'"
           class="dynamic-list-row"
           v-bind="$attrs"
           v-loading="listLoading"
         >
           <div class="both-center empty-wrap" v-if="!Array.isArray(value) || value.length < 1">
-            <slot name="empty">暂无数据</slot>
+            <slot name="empty">Empty List</slot>
           </div>
 
           <slot v-bind="{ item, index }" v-else v-for="(item, index) of value"></slot>
@@ -109,8 +109,8 @@
       <!-- 分页 -->
       <div class="infinite-pager" v-if="pagerOptions.type === 'infinite'">
         <slot name="pager">
-          <el-button :loading="loadMoreLoading" @click="loadMore" v-if="hasMoreData">加载更多</el-button>
-          <span v-else-if="Array.isArray(value) && value.length > 0">没有更多数据了</span>
+          <el-button :loading="loadMoreLoading" @click="loadMore" v-if="hasMoreData">Load More</el-button>
+          <span v-else-if="Array.isArray(value) && value.length > 0">No more data</span>
         </slot>
       </div>
       <!-- 添加定制样式的分页 -->
@@ -136,6 +136,7 @@
           <el-pagination
             :disabled="listLoading"
             :hide-on-single-page="hideOnSinglePage"
+            :small="isSmallPagination"
             @current-change="onPageCurrentChange"
             @size-change="onPageSizeChange"
             v-bind="pagerOptions"
@@ -194,6 +195,10 @@
       title: {
         type: String,
         default: ''
+      },
+      isSmallPagination: {
+        type: Boolean,
+        default: false
       }
     },
 
@@ -392,7 +397,7 @@
         const { currentPage, pageSize, total } = this.pagerOptions
         const totalPages = Math.ceil(total / pageSize)
         const outOfRange = currentPage > totalPages
-        this.message = outOfRange ? '页码超出范围' : ''
+        this.message = outOfRange ? 'Page Numbers are out of range' : ''
         this.disabled = outOfRange
       },
       goToFirstPage() {
@@ -494,5 +499,12 @@
       margin: 0 10px;
       vertical-align: middle;
     }
+  }
+  >>> .el-pagination {
+    .el-input,
+    .el-input__inner {
+      height: 23px;
+    }
+    font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
   }
 </style>

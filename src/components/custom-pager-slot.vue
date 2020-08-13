@@ -1,7 +1,7 @@
 <template>
   <div class="el-pager pager-slot" v-if="!ifHide">
     <div class="fr right">
-      每页显示项
+      Items Per Page
       <el-dropdown @command="handleSizeChange">
         <div class="el-dropdown-link">
           {{ pageSize }}
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="total">共 {{ total }} 项</div>
+    <div class="total">{{ total }} items in total</div>
   </div>
 </template>
 

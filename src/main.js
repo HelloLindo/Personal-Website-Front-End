@@ -7,6 +7,7 @@ import store from './store'
 import 'normalize.css/normalize.css'
 import '@/assets/theme/index.css'
 import ElementUI from 'element-ui'
+import locale from 'element-ui/lib/locale/lang/en'
 import ajax from '@/utils/ajax'
 import '@/assets/svg/iconfont.js'
 import '@/assets/svg/iconfont.css'
@@ -28,7 +29,7 @@ Vue.config.errorHandler = function (err, vm, info) {
   console.warn(err, vm, info)
 }
 
-Vue.use(ElementUI)
+Vue.use(ElementUI, { locale })
 
 Vue.use(VueGtag, {
   config: { id: 'UA-175251058-1' }

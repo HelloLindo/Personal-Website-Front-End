@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <section class="home">
     <div class="intro">
       <div class="profile">
         <el-image :src="profileUrl" fit="cover">
@@ -9,10 +9,10 @@
         </el-image>
       </div>
       <div class="text">
-        <p :key="index" v-for="(text, index) in introText" v-html="text"></p>
+        <p :key="index" v-for="(text, index) of introText" v-html="text"></p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -85,6 +85,6 @@
       line-height: 20px;
     }
     float: right;
-    width: calc(100vh - 255px);
+    width: calc(100vh - 280px);
   }
 </style>

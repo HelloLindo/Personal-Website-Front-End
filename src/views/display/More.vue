@@ -1,5 +1,5 @@
 <template>
-  <div class="more"></div>
+  <section class="more"></section>
 </template>
 
 <script>
