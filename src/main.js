@@ -10,6 +10,8 @@ import ElementUI from 'element-ui'
 import ajax from '@/utils/ajax'
 import '@/assets/svg/iconfont.js'
 import '@/assets/svg/iconfont.css'
+import '@/global/components'
+import VueGtag from 'vue-gtag'
 
 Vue.config.productionTip = true
 // Vue.config.devtools = ENV === 'dev'
@@ -27,6 +29,10 @@ Vue.config.errorHandler = function (err, vm, info) {
 }
 
 Vue.use(ElementUI)
+
+Vue.use(VueGtag, {
+  config: { id: 'UA-175251058-1' }
+})
 
 // Global methods
 Vue.prototype.$ajax = ajax
