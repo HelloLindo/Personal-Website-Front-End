@@ -25,7 +25,7 @@
     // Data
     data() {
       return {
-        profileUrl: require('../../assets/img/profile.jpg'),
+        profileUrl: require('../../assets/img/profile_circle.png'),
         introText: [
           "Hi, I'm Yuling. Welcome to my website.",
           "I'm a software engineer based in China specializing in building (and occasionally designing) exceptional services, websites, applications, and everything in between.",
@@ -57,23 +57,13 @@
 </script>
 
 <style scoped>
+  @import url('../../assets/css/vars.css');
+
   .intro {
     overflow: hidden;
   }
   .profile {
-    >>> .el-image {
-      img {
-        width: 240px;
-        height: 260px;
-      }
-      width: 220px;
-      height: 220px;
-    }
     overflow: hidden;
-    border-radius: 800px;
-    float: left;
-    margin-right: 30px;
-    margin-top: 20px;
   }
   >>> .el-icon-picture-outline {
     font-size: 25px;
@@ -84,7 +74,61 @@
       text-align: left;
       line-height: 20px;
     }
-    float: right;
-    width: calc(100vh - 280px);
+  }
+
+  @media only screen and (max-width: $small-screen-device) {
+    .profile {
+      margin-top: 20px;
+      >>> .el-image {
+        img {
+          /* Use vw to keep it square */
+          width: 68vw;
+          height: 68vw;
+        }
+      }
+    }
+    .text {
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: $small-screen-device) and (max-width: $large-screen-device) {
+    .profile {
+      >>> .el-image {
+        img {
+          /* Use vw to keep it square */
+          width: 17vw;
+          height: 17vw;
+        }
+      }
+      float: left;
+      margin-right: 30px;
+      margin-top: 20px;
+    }
+    .text {
+      float: right;
+      width: calc(100% - 30%);
+    }
+  }
+
+  @media only screen and (min-width: $large-screen-device) {
+    .profile {
+      >>> .el-image {
+        img {
+          width: 220px;
+          height: 220px;
+        }
+        width: 220px;
+        height: 220px;
+      }
+      float: left;
+      margin-right: 30px;
+      margin-top: 20px;
+    }
+    .text {
+      float: right;
+      width: 720px;
+    }
   }
 </style>

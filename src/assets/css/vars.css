@@ -56,6 +56,10 @@ $menuText: $color-light3;
 $menuActiveText: $color-primary;
 $subMenuActiveText: $color-light1;
 
+/* Screen Size */
+$small-screen-device: 870px;
+$large-screen-device: 1440px;
+
 /* exports color */
 :export {
   navBarHeight: $navBarHeight;

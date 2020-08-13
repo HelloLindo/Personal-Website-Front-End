@@ -507,4 +507,9 @@
     }
     font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
   }
+
+  >>> .el-loading-spinner > i,
+  >>> .el-loading-text {
+    color: #d15b57;
+  }
 </style>
