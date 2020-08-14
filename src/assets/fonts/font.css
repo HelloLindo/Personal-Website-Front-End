@@ -1,13 +1,20 @@
 @font-face {
   font-family: "SFMono-Regular";
-  src: url("./assets/fonts/SFMono-Regular.ttf");
+  src: url("./assets/fonts/SFMono-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Market-Deco";
-  src: url("./assets/fonts/Market-Deco.ttf");
+  src: url("./assets/fonts/Market-Deco.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rift-Regular";
+  src: url("./assets/fonts/Rift-Regular.woff2");
   font-weight: normal;
   font-style: normal;
 }
