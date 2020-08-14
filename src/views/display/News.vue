@@ -73,7 +73,8 @@
         urlKeys: {
           index: 'index',
           size: 'size'
-        }
+        },
+        layout: 'prev, pager, next'
       },
       listLoading: false
     }),
@@ -98,6 +99,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  @import url('../../assets/css/vars.css');
+
   >>> .el-card {
     border: none;
   }
@@ -113,8 +116,19 @@
       font-size: 11px;
       color: #bcbcbc;
     }
-    width: 70%;
     height: 230px;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $small-screen-device) {
+    .box-card {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: $small-screen-device) {
+    .box-card {
+      width: 70%;
+    }
   }
 </style>

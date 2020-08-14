@@ -2,7 +2,9 @@
   <div class="app">
     <div class="main-content">
       <nav-top></nav-top>
-      <router-view></router-view>
+      <div class="pages">
+        <router-view></router-view>
+      </div>
       <nav-bottom></nav-bottom>
     </div>
   </div>
@@ -22,6 +24,7 @@
 
 <style>
   @import './assets/fonts/font.css';
+  @import url('./assets/css/vars.css');
 
   .app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -34,21 +37,36 @@
   html,
   body,
   .app {
-    height: 100%;
     background-color: #fafafa;
   }
 
-  @media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: $small-screen-device) {
+    .main-content {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .pages {
+      margin-top: 100px;
+    }
+  }
+
+  @media only screen and (min-width: $small-screen-device) and (max-width: $large-screen-device) {
     .main-content {
       width: 70%;
       margin: 0 auto;
     }
   }
 
-  @media only screen and (min-width: 1441px) {
+  @media only screen and (min-width: $large-screen-device) {
     .main-content {
       width: 1000px;
       margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-width: $small-screen-device) {
+    .pages {
+      margin-top: 300px;
     }
   }
 </style>

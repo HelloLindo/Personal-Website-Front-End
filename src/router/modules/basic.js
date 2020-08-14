@@ -9,7 +9,7 @@ export default [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Home'
+      title: 'Home - Yuling Wu'
     }
   },
   {
@@ -17,7 +17,7 @@ export default [
     name: 'News',
     component: News,
     meta: {
-      title: 'News'
+      title: 'News - Yuling Wu'
     }
   },
   {
@@ -25,7 +25,7 @@ export default [
     name: 'Monment',
     component: Monment,
     meta: {
-      title: 'Monment'
+      title: 'Monment - Yuling Wu'
     }
   },
   {
@@ -33,7 +33,7 @@ export default [
     name: 'More',
     component: More,
     meta: {
-      title: 'More'
+      title: 'More - Yuling Wu'
     }
   },
   {

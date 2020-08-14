@@ -501,10 +501,6 @@
     }
   }
   >>> .el-pagination {
-    .el-input,
-    .el-input__inner {
-      height: 23px;
-    }
     font-family: 'SFMono-Regular', 'Avenir', Helvetica, Arial, sans-serif;
   }
 
