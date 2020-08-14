@@ -6,9 +6,7 @@
   export default {
     name: 'More',
 
-    data() {
-      return {}
-    },
+    data: () => ({}),
 
     methods: {}
   }

@@ -1,6 +1,6 @@
 import Home from '@/views/display/Home.vue'
 import News from '@/views/display/News.vue'
-import Monment from '@/views/display/Monment.vue'
+import Moment from '@/views/display/Moment.vue'
 import More from '@/views/display/More.vue'
 
 export default [
@@ -21,11 +21,11 @@ export default [
     }
   },
   {
-    path: '/monment',
-    name: 'Monment',
-    component: Monment,
+    path: '/moment',
+    name: 'Moment',
+    component: Moment,
     meta: {
-      title: 'Monment - Yuling Wu'
+      title: 'Moment - Yuling Wu'
     }
   },
   {

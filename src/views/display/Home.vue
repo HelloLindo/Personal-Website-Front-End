@@ -23,18 +23,27 @@
     mixins: [],
 
     // Data
-    data() {
-      return {
-        profileUrl: require('../../assets/img/profile_circle.png'),
-        introText: [
-          "Hi, I'm Yuling. Welcome to my website.🎈",
-          "I'm a software engineer based in China specializing in building (and occasionally designing) exceptional services, websites, applications, and everything in between.",
-          'I achieved a Bachelor\'s Degree in Computer Science and Technology at <a href="http://csse.szu.edu.cn/cn/index.html" style="text-decoration: none;color: #d15b57;">Shenzhen University</a>, Shenzhen, China in July, 2020. Further, I\'m going to pursue a Master\'s Degree in Software Engineering at <a href="https://www.isri.cmu.edu/" style="text-decoration: none;color: #d15b57;">Carnegie Mellon University</a>, Pittsburgh, US.',
-          "Currently, I'm seeking an inspiring, rewarding and challenging job with outstanding, passionate and vigorous people. If you have a job opportunity, please don't hesitate to contact me.",
-          'Besides, I\'m also interested in Reinforcement Learning and always eagering to learn more about Machine Learning. Please click "More About Me" to know more about me.'
-        ]
-      }
-    },
+    data: () => ({
+      profileUrl: require('../../assets/img/profile_circle.png'),
+      introText: [
+        "Hi, I'm Yuling. Welcome to my website.🎈",
+
+        `I'm a software engineer based in China specializing in building (and occasionally designing) 
+                exceptional services, websites, applications, and everything in between.`,
+
+        `I achieved a Bachelor\'s Degree in Computer Science and Technology at 
+                <a href="http://csse.szu.edu.cn/cn/index.html" style="text-decoration: none;color: #d15b57;">Shenzhen University</a>, 
+                Shenzhen, China in July, 2020. I used to plan to pursue a Master\'s Degree in Software Engineering at 
+                <a href="https://www.isri.cmu.edu/" style="text-decoration: none;color: #d15b57;">Carnegie Mellon University</a>, 
+                Pittsburgh, US. However, I have to abort it because of the pandemic COVID-19 and the international political situation.`,
+
+        `Currently, I'm seeking an inspiring, rewarding and challenging job with outstanding, passionate and vigorous people. 
+                If you have a job opportunity, please don't hesitate to contact me.`,
+
+        `Besides, I\'m also interested in Reinforcement Learning and always eagering to learn more about Machine Learning. 
+                Please click "More About Me" to know more about me.`
+      ]
+    }),
     model: {},
     props: {},
     computed: {},

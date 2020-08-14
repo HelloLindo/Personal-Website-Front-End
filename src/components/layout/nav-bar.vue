@@ -44,14 +44,12 @@
   export default {
     name: 'NavBar',
 
-    data() {
-      return {
-        isDrawerOpen: false,
-        activeIndex: '0',
-        menuContent: ['Home', 'News', 'Monment', 'More About Me', 'Resume'],
-        routerName: ['Home', 'News', 'Monment', 'More']
-      }
-    },
+    data: () => ({
+      isDrawerOpen: false,
+      activeIndex: '0',
+      menuContent: ['Home', 'News', 'Moment', 'More About Me', 'Resume'],
+      routerName: ['Home', 'News', 'Moment', 'More']
+    }),
 
     mounted() {
       this.activeIndex = this.routerName.indexOf(this.$route.name).toString()

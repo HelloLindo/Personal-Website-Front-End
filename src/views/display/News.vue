@@ -55,6 +55,14 @@
     {
       date: 'September 20, 2020',
       content: "I'll be wherever I need to be."
+    },
+    {
+      date: 'September 20, 2020',
+      content: '"You can tell how smart people are by the things they laugh at." - Tina Fey'
+    },
+    {
+      date: 'September 20, 2020',
+      content: "I'll be wherever I need to be."
     }
   ]
 
@@ -68,7 +76,7 @@
       listPager: {
         total: 0,
         currentPage: 1,
-        pageSize: 5,
+        pageSize: 8,
         pageSizes: [5, 10, 20],
         urlKeys: {
           index: 'index',

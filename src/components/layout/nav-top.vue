@@ -39,11 +39,9 @@
       NavBar
     },
 
-    data() {
-      return {
-        websiteName: 'Yuling Wu'
-      }
-    },
+    data: () => ({
+      websiteName: 'Yuling Wu'
+    }),
 
     mounted() {
       // this.$store

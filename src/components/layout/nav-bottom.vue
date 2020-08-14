@@ -30,20 +30,18 @@
   export default {
     name: 'NavBottom',
 
-    data() {
-      return {
-        wechatDialogVisible: false,
-        icons: {
-          twitter: 'https://twitter.com/Hello_Lindo',
-          linkedin: 'https://www.linkedin.com/in/lindowu',
-          youtube: 'https://www.youtube.com/channel/UCzqPcdtI88P838eq6OzbP4g',
-          github: 'https://github.com/HelloLindo',
-          wechat: 'lindowu',
-          email: 'lindowu@foxmail.com'
-        },
-        year: 2020
-      }
-    },
+    data: () => ({
+      wechatDialogVisible: false,
+      icons: {
+        twitter: 'https://twitter.com/Hello_Lindo',
+        linkedin: 'https://www.linkedin.com/in/lindowu',
+        youtube: 'https://www.youtube.com/channel/UCzqPcdtI88P838eq6OzbP4g',
+        github: 'https://github.com/HelloLindo',
+        wechat: 'lindowu',
+        email: 'lindowu@foxmail.com'
+      },
+      year: 2020
+    }),
     mounted() {
       let date = new Date()
       this.year = date.getFullYear()

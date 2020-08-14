@@ -89,11 +89,9 @@
       }
     },
 
-    data() {
-      return {
-        ifHide: false
-      }
-    },
+    data: () => ({
+      ifHide: false
+    }),
 
     watch: {
       total: {
