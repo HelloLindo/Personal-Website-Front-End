@@ -99,7 +99,7 @@
           this.listData = testData.slice(start, end)
 
           this.listLoading = false
-        }, 500)
+        }, 300)
       }
     }
   }

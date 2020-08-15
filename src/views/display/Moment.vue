@@ -43,8 +43,8 @@
       title: 'THE MYTH OF WELL-ROUNDEDNESS',
       date: 'September 20, 2020',
       content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
-                        As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
-                        As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
+                              As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
+                              As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
       pictures: [
         'https://via.placeholder.com/100',
         'https://via.placeholder.com/150',
@@ -73,8 +73,30 @@
       title: 'THE MYTH OF WELL-ROUNDEDNESS',
       date: 'September 20, 2020',
       content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
-                        As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
-                        As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
+                              As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
+                              As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
+      pictures: ['https://via.placeholder.com/200', 'https://via.placeholder.com/150']
+    },
+    {
+      title: "THE 6 MONTH TEST & WHY IT'S POWERFUL",
+      date: 'August 19, 2020',
+      content:
+        '"Our chief want is someone who will inspire us to be what we know we could be." - Ralph Waldo Emerson',
+      pictures: [
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150'
+      ]
+    },
+    {
+      title: 'THE MYTH OF WELL-ROUNDEDNESS',
+      date: 'September 20, 2020',
+      content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
+                              As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
+                              As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
       pictures: [
         'https://via.placeholder.com/200',
         'https://via.placeholder.com/150',
@@ -103,8 +125,8 @@
       title: 'THE MYTH OF WELL-ROUNDEDNESS',
       date: 'September 20, 2020',
       content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
-                        As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
-                        As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
+                              As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
+                              As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
       pictures: [
         'https://via.placeholder.com/200',
         'https://via.placeholder.com/150',
@@ -133,38 +155,8 @@
       title: 'THE MYTH OF WELL-ROUNDEDNESS',
       date: 'September 20, 2020',
       content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
-                        As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
-                        As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
-      pictures: [
-        'https://via.placeholder.com/200',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/200',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/300',
-        'https://via.placeholder.com/200',
-        'https://via.placeholder.com/150'
-      ]
-    },
-    {
-      title: "THE 6 MONTH TEST & WHY IT'S POWERFUL",
-      date: 'August 19, 2020',
-      content:
-        '"Our chief want is someone who will inspire us to be what we know we could be." - Ralph Waldo Emerson',
-      pictures: [
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/150',
-        'https://via.placeholder.com/150'
-      ]
-    },
-    {
-      title: 'THE MYTH OF WELL-ROUNDEDNESS',
-      date: 'September 20, 2020',
-      content: `Time and time again, I hear this aspiration of “well-roundedness” being perpetuated. Being good at everything surely must get you what you want—those good schools, great internships, and even better jobs that will inevitably propel you into a successful career and thereby successful life. <br \><br \>It’s a myth.<br \><br \>
-                        As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
-                        As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
+                              As a high school student applying to college, you need to be strong academically and take the hardest classes. You need to ace your standardized tests. You need to show leadership and sustained involvement in extracurriculars. And you probably need to volunteer a bit on the side to give back to the community, to show that you’re not just a happy robot.
+                              As a college student applying to jobs? Well, those great jobs at high-flying banks or consulting firms can be yours, too—provided you have a good GPA, a few summers at big brand companies where you’ve made noteworthy impact, a few gigs on committees of campus clubs, and a healthy social life to make all the contacts you need to even be considered for interviews in the first place. And on and on. Sound about right?`,
       pictures: [
         'https://via.placeholder.com/200',
         'https://via.placeholder.com/150',
@@ -224,7 +216,7 @@
           this.listData = testData.slice(start, end)
 
           this.listLoading = false
-        }, 500)
+        }, 700)
       }
     }
   }
